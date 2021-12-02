@@ -2,7 +2,7 @@
 
 [ext_resource path="res://playerscene.tscn" type="PackedScene" id=1]
 [ext_resource path="res://3 Objects/Willows/1.png" type="Texture" id=2]
-[ext_resource path="res://Tileset.png" type="Texture" id=3]
+[ext_resource path="res://3 Objects/Tileset.png" type="Texture" id=3]
 [ext_resource path="res://3 Objects/Bushes/Background_01.png" type="Texture" id=4]
 [ext_resource path="res://3 Objects/Willows/2.png" type="Texture" id=5]
 [ext_resource path="res://3 Objects/Willows/3.png" type="Texture" id=6]
