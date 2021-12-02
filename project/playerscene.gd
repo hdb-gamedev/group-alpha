@@ -6,11 +6,13 @@ func _ready():
 	pass 
 
 func _physics_process(delta):
-	$AnimatedSprite.animation = "Idle"
+	$AnimatedSprite.animation = "Walk"
 	if Input.is_action_pressed("ui_right"):
 		velocity.x = 150 
+		$AnimatedSprite.flip_h = true
 	elif Input.is_action_pressed("ui_left"):
 		velocity.x = -150
+		$AnimatedSprite.flip_h = false
 	else:
 		velocity.x = 0
 	
