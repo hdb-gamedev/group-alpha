@@ -6,8 +6,6 @@
 [ext_resource path="res://kenney_pixelplatformer/Characters/character_0022.png" type="Texture" id=4]
 
 [sub_resource type="CapsuleShape2D" id=1]
-radius = 12.0
-height = 6.0
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -32,3 +30,5 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Idle"
+frame = 1
+playing = true
