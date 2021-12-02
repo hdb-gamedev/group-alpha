@@ -19,7 +19,7 @@ animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "Idle",
-"speed": 5.0
+"speed": 4.0
 } ]
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
@@ -32,3 +32,5 @@ shape = SubResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "Idle"
+frame = 1
+playing = true
