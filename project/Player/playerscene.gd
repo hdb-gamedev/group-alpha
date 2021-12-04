@@ -18,15 +18,16 @@ func _physics_process(delta):
 	
 	if !is_on_floor():
 		velocity.y += 10
-	else: velocity.y = 0.1
+	else: velocity.y = 10
 	
 	if Input.is_action_just_pressed("jump") && is_on_floor():
 		velocity.y = -300
+		
 	
 	if is_on_ceiling():
 		velocity.y = 10
 
-	move_and_slide(velocity, Vector2(0, -1))
+	move_and_slide(velocity, Vector2(0, -1), false)
 	
 
 func _process(delta):
