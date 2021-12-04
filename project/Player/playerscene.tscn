@@ -34,5 +34,4 @@ shape = SubResource( 3 )
 position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 2
 playing = true
