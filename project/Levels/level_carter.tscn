@@ -495,7 +495,6 @@ texture = ExtResource( 33 )
 
 [node name="Background01" type="Sprite" parent="Background01"]
 position = Vector2( -1334, -1.52588e-05 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 33 )
 
 [node name="Background02" type="Sprite" parent="Background01"]
