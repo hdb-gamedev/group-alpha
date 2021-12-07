@@ -27,7 +27,8 @@ func _physics_process(delta):
 	if is_on_ceiling():
 		velocity.y = 10
 
-	move_and_slide(velocity, Vector2(0, -1), false)
+	velocity = move_and_slide(velocity, Vector2(0, -1))
+	
 	
 
 func _process(delta):
