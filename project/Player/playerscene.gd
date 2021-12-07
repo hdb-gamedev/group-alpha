@@ -6,7 +6,7 @@ func _ready():
 	pass 
 
 func _physics_process(delta):
-	$AnimatedSprite.animation = "Walk"
+	$AnimatedSprite.animation = "walk"
 	if Input.is_action_pressed("move_right"):
 		velocity.x = 150 
 		$AnimatedSprite.flip_h = true
