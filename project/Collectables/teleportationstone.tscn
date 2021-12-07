@@ -1,8 +1,9 @@
 [gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Assets/3 Objects/Rune.png" type="Texture" id=1]
-[ext_resource path="res://Collectables/Area2D.gd" type="Script" id=2]
+[ext_resource path="res://Collectables/collectable.gd" type="Script" id=2]
 [ext_resource path="res://Assets/kenney_pixelplatformer/Characters/character_0024.png" type="Texture" id=3]
+
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 1 )
