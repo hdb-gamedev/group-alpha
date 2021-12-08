@@ -76,7 +76,7 @@
 24/name = "center"
 24/texture = ExtResource( 1 )
 24/tex_offset = Vector2( 0, 0 )
-24/modulate = Color( 1, 1, 1, 1 )
+24/modulate = Color( 0.63, 0.63, 0.63, 1 )
 24/region = Rect2( 32, 32, 32, 32 )
 24/tile_mode = 0
 24/occluder_offset = Vector2( 0, 0 )

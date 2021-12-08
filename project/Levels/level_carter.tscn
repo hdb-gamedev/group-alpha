@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Assets/Tilesets/FINALTILE.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/playerscene.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Assets/3 Objects/Trees/3.png" type="Texture" id=3]
+[ext_resource path="res://Assets/3 Objects/Tree_sticks/3.png" type="Texture" id=3]
 [ext_resource path="res://Assets/3 Objects/Stones/5.png" type="Texture" id=4]
 [ext_resource path="res://Assets/3 Objects/Stones/2.png" type="Texture" id=5]
 [ext_resource path="res://Assets/3 Objects/Grass/4.png" type="Texture" id=6]
