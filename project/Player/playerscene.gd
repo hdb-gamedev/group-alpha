@@ -1,5 +1,6 @@
 extends KinematicBody2D
 var velocity = Vector2(0, 0)
+var tpvect = Vector2()
 
 
 func _ready():
@@ -23,12 +24,12 @@ func _physics_process(delta):
 	if Input.is_action_just_pressed("jump") && is_on_floor():
 		velocity.y = -300
 		
-	
 	if is_on_ceiling():
 		velocity.y = 10
 
 	velocity = move_and_slide(velocity, Vector2(0, -1))
 	
+	get_viewport().get_mouse_position()
 	
 
 func _process(delta):
