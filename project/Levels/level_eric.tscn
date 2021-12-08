@@ -639,12 +639,10 @@ texture = ExtResource( 20 )
 
 [node name="sign" type="Sprite" parent="obj"]
 position = Vector2( -196, -387 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 45 )
 
 [node name="7" type="Sprite" parent="obj/sign"]
 position = Vector2( -167, 66 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 38 )
 
 [node name="Background2" type="Sprite" parent="obj"]

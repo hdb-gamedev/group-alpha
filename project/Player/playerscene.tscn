@@ -17,7 +17,7 @@ animations = [ {
 radius = 11.0
 height = 4.0
 
-[node name="KinematicBody2D" type="KinematicBody2D"]
+[node name="KinematicBody" type="KinematicBody2D"]
 z_index = 1
 script = ExtResource( 1 )
 
@@ -25,7 +25,6 @@ script = ExtResource( 1 )
 position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -1,4 +1,5 @@
-extends Node2D
+extends Button
 
-func _on_Area2D_body_entered(body):
+
+func _on_y_key_pres_pressed():
 	get_tree().change_scene("res://Levels/level_eric.tscn")

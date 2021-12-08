@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://Assets/Tilesets/FINALTILE.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/playerscene.tscn" type="PackedScene" id=2]
@@ -36,8 +36,7 @@
 [ext_resource path="res://Collectables/teleportationstone.tscn" type="PackedScene" id=34]
 [ext_resource path="res://UI/ui.tscn" type="PackedScene" id=35]
 [ext_resource path="res://Assets/Tilesets/water_set.tres" type="TileSet" id=36]
-[ext_resource path="res://Levels/Next_level.gd" type="Script" id=37]
-[ext_resource path="res://Assets/kenney_pixelplatformer/Tiles/tile_0027.png" type="Texture" id=38]
+[ext_resource path="res://Assets/kenney_pixelplatformer/Tiles/tile_0158.png" type="Texture" id=37]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 128, 9.5 )
@@ -67,7 +66,7 @@ extents = Vector2( 16, 8 )
 extents = Vector2( 16.125, 8 )
 
 [sub_resource type="RectangleShape2D" id=10]
-extents = Vector2( 9.25, 6.75 )
+extents = Vector2( 6, 7 )
 
 [node name="Node2D2" type="Node2D"]
 script = ExtResource( 30 )
@@ -530,14 +529,13 @@ __meta__ = {
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 35 )]
 
-[node name="Hitbox" type="Area2D" parent="."]
-position = Vector2( 38, -73 )
-script = ExtResource( 37 )
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( 46, -91 )
 
-[node name="CollisionShape" type="CollisionShape2D" parent="Hitbox"]
-position = Vector2( -6, 6 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource( 10 )
 
-[node name="Next_level" type="Sprite" parent="Hitbox"]
-position = Vector2( -6, 6 )
-texture = ExtResource( 38 )
+[node name="Tile0158" type="Sprite" parent="Area2D/CollisionShape2D"]
+texture = ExtResource( 37 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
