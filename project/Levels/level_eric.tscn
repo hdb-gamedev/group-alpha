@@ -1,6 +1,4 @@
-[gd_scene load_steps=25 format=2]
-
-[ext_resource path="res://Tileset.png" type="Texture" id=1]
+[gd_scene load_steps=24 format=2]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -70,7 +68,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 
 [sub_resource type="TileSet" id=33]
 1/name = "top_edge"
-1/texture = ExtResource( 1 )
 1/tex_offset = Vector2( 0, 0 )
 1/modulate = Color( 1, 1, 1, 1 )
 1/region = Rect2( 32, 0, 32, 32 )
@@ -91,7 +88,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 1/z_index = 0
 2/name = "top_right_corner"
-2/texture = ExtResource( 1 )
 2/tex_offset = Vector2( 0, 0 )
 2/modulate = Color( 1, 1, 1, 1 )
 2/region = Rect2( 64, 0, 32, 32 )
@@ -112,7 +108,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 2/z_index = 0
 3/name = "right_edge"
-3/texture = ExtResource( 1 )
 3/tex_offset = Vector2( 0, 0 )
 3/modulate = Color( 1, 1, 1, 1 )
 3/region = Rect2( 64, 32, 32, 32 )
@@ -133,7 +128,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 3/z_index = 0
 5/name = "bottom_right_corner"
-5/texture = ExtResource( 1 )
 5/tex_offset = Vector2( 0, 0 )
 5/modulate = Color( 1, 1, 1, 1 )
 5/region = Rect2( 64, 64, 32, 32 )
@@ -154,7 +148,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 5/z_index = 0
 6/name = "bottom_edge"
-6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
 6/modulate = Color( 1, 1, 1, 1 )
 6/region = Rect2( 32, 64, 32, 32 )
@@ -175,7 +168,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 6/z_index = 0
 8/name = "bottom_left_corner"
-8/texture = ExtResource( 1 )
 8/tex_offset = Vector2( 0, 0 )
 8/modulate = Color( 1, 1, 1, 1 )
 8/region = Rect2( 0, 64, 32, 32 )
@@ -196,7 +188,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 8/z_index = 0
 9/name = "left_slope"
-9/texture = ExtResource( 1 )
 9/tex_offset = Vector2( 0, 0 )
 9/modulate = Color( 1, 1, 1, 1 )
 9/region = Rect2( 192, 128, 32, 32 )
@@ -217,7 +208,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 9/z_index = 0
 10/name = "right_slope"
-10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
 10/modulate = Color( 1, 1, 1, 1 )
 10/region = Rect2( 224, 128, 32, 32 )
@@ -238,7 +228,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 10/z_index = 0
 11/name = "middle_full_platform"
-11/texture = ExtResource( 1 )
 11/tex_offset = Vector2( 0, 0 )
 11/modulate = Color( 1, 1, 1, 1 )
 11/region = Rect2( 224, 0, 32, 32 )
@@ -259,7 +248,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 11/z_index = 0
 13/name = "right_half_platform"
-13/texture = ExtResource( 1 )
 13/tex_offset = Vector2( 0, 0 )
 13/modulate = Color( 1, 1, 1, 1 )
 13/region = Rect2( 256, 32, 32, 32 )
@@ -280,7 +268,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 13/z_index = 0
 14/name = "Tileset.png 14"
-14/texture = ExtResource( 1 )
 14/tex_offset = Vector2( 0, 0 )
 14/modulate = Color( 1, 1, 1, 1 )
 14/region = Rect2( 96, 64, 32, 32 )
@@ -301,7 +288,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 14/z_index = 0
 15/name = "Tileset.png 15"
-15/texture = ExtResource( 1 )
 15/tex_offset = Vector2( 0, 0 )
 15/modulate = Color( 1, 1, 1, 1 )
 15/region = Rect2( 160, 64, 32, 32 )
@@ -322,7 +308,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 15/z_index = 0
 16/name = "Tileset.png 16"
-16/texture = ExtResource( 1 )
 16/tex_offset = Vector2( 0, 0 )
 16/modulate = Color( 1, 1, 1, 1 )
 16/region = Rect2( 160, 0, 32, 32 )
@@ -343,7 +328,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 16/z_index = 0
 17/name = "Tileset.png 17"
-17/texture = ExtResource( 1 )
 17/tex_offset = Vector2( 0, 0 )
 17/modulate = Color( 1, 1, 1, 1 )
 17/region = Rect2( 96, 0, 32, 32 )
@@ -364,7 +348,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 17/z_index = 0
 20/name = "Tileset.png 20"
-20/texture = ExtResource( 1 )
 20/tex_offset = Vector2( 0, 0 )
 20/modulate = Color( 1, 1, 1, 1 )
 20/region = Rect2( 0, -32, 32, 32 )
@@ -394,7 +377,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 20/z_index = 0
 22/name = "left_edge"
-22/texture = ExtResource( 1 )
 22/tex_offset = Vector2( 0, 0 )
 22/modulate = Color( 1, 1, 1, 1 )
 22/region = Rect2( 0, 32, 32, 32 )
@@ -415,7 +397,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 22/z_index = 0
 23/name = "top_left_corner"
-23/texture = ExtResource( 1 )
 23/tex_offset = Vector2( 0, 0 )
 23/modulate = Color( 1, 1, 1, 1 )
 23/region = Rect2( 0, 0, 32, 32 )
@@ -436,7 +417,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 23/z_index = 0
 24/name = "center"
-24/texture = ExtResource( 1 )
 24/tex_offset = Vector2( 0, 0 )
 24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 32, 32, 32, 32 )
@@ -457,7 +437,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 24/z_index = 0
 25/name = "left_half_platform"
-25/texture = ExtResource( 1 )
 25/tex_offset = Vector2( 0, 0 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 256, 128, 32, 32 )
@@ -478,7 +457,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 25/z_index = 0
 26/name = "full_platform"
-26/texture = ExtResource( 1 )
 26/tex_offset = Vector2( 0, 0 )
 26/modulate = Color( 1, 1, 1, 1 )
 26/region = Rect2( 256, 96, 32, 32 )
@@ -499,7 +477,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 26/z_index = 0
 27/name = "right_full_platform"
-27/texture = ExtResource( 1 )
 27/tex_offset = Vector2( 0, 0 )
 27/modulate = Color( 1, 1, 1, 1 )
 27/region = Rect2( 256, 0, 32, 32 )
@@ -520,7 +497,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 27/z_index = 0
 28/name = "left_full_platform"
-28/texture = ExtResource( 1 )
 28/tex_offset = Vector2( 0, 0 )
 28/modulate = Color( 1, 1, 1, 1 )
 28/region = Rect2( 192, 0, 32, 32 )
@@ -541,7 +517,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 } ]
 28/z_index = 0
 29/name = "bg_center_tile"
-29/texture = ExtResource( 1 )
 29/tex_offset = Vector2( 0, 0 )
 29/modulate = Color( 1, 1, 1, 1 )
 29/region = Rect2( 32, 32, 32, 32 )
@@ -555,7 +530,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 29/shapes = [  ]
 29/z_index = -1
 30/name = "water_single"
-30/texture = ExtResource( 1 )
 30/tex_offset = Vector2( 0, 0 )
 30/modulate = Color( 1, 1, 1, 1 )
 30/region = Rect2( 288, 0, 32, 32 )
@@ -569,7 +543,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 30/shapes = [  ]
 30/z_index = 0
 31/name = "left_right"
-31/texture = ExtResource( 1 )
 31/tex_offset = Vector2( 0, 0 )
 31/modulate = Color( 1, 1, 1, 1 )
 31/region = Rect2( 256, 64, 32, 32 )
@@ -583,7 +556,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 31/shapes = [  ]
 31/z_index = 0
 32/name = "water_center"
-32/texture = ExtResource( 1 )
 32/tex_offset = Vector2( 0, 0 )
 32/modulate = Color( 1, 1, 1, 1 )
 32/region = Rect2( 288, 64, 32, 32 )
@@ -597,7 +569,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 32/shapes = [  ]
 32/z_index = 0
 33/name = "water_center2"
-33/texture = ExtResource( 1 )
 33/tex_offset = Vector2( 0, 0 )
 33/modulate = Color( 1, 1, 1, 1 )
 33/region = Rect2( 288, 96, 32, 32 )
@@ -611,7 +582,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 33/shapes = [  ]
 33/z_index = 0
 34/name = "water_edge_right"
-34/texture = ExtResource( 1 )
 34/tex_offset = Vector2( 0, 0 )
 34/modulate = Color( 1, 1, 1, 1 )
 34/region = Rect2( 224, 160, 32, 32 )
@@ -625,7 +595,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 34/shapes = [  ]
 34/z_index = 0
 35/name = "land_split"
-35/texture = ExtResource( 1 )
 35/tex_offset = Vector2( 0, 0 )
 35/modulate = Color( 1, 1, 1, 1 )
 35/region = Rect2( 128, 0, 32, 32 )
@@ -639,7 +608,6 @@ points = PoolVector2Array( 0, 32, 32, 0, 32, 0, 32, 32, 32, 32 )
 35/shapes = [  ]
 35/z_index = 0
 36/name = "water_break"
-36/texture = ExtResource( 1 )
 36/tex_offset = Vector2( 0, 0 )
 36/modulate = Color( 1, 1, 1, 1 )
 36/region = Rect2( 288, 160, 32, 32 )
