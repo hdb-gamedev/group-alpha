@@ -5,10 +5,6 @@
 [ext_resource path="res://Assets/kenney_pixelplatformer/Characters/character_0021.png" type="Texture" id=3]
 [ext_resource path="res://Assets/kenney_pixelplatformer/Characters/character_0022.png" type="Texture" id=4]
 
-[sub_resource type="CapsuleShape2D" id=3]
-radius = 11.0
-height = 4.0
-
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ) ],
@@ -17,17 +13,13 @@ animations = [ {
 "speed": 4.0
 } ]
 
+[sub_resource type="CapsuleShape2D" id=3]
+radius = 11.0
+height = 4.0
+
 [node name="KinematicBody2D" type="KinematicBody2D"]
 z_index = 1
 script = ExtResource( 1 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-current = true
-zoom = Vector2( 0.5, 0.5 )
-smoothing_enabled = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 1 )
@@ -35,3 +27,11 @@ frames = SubResource( 2 )
 animation = "walk"
 frame = 2
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
+zoom = Vector2( 0.5, 0.5 )
+smoothing_enabled = true
