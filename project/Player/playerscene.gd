@@ -1,7 +1,16 @@
 extends KinematicBody2D
 class_name Player
+
 var velocity = Vector2(0, 0)
 var startpos
+var gravity = 10
+var jumpspeed = 270
+var friction = .85
+var maxspeed = 300
+var acceleration = maxspeed * (1 - friction)
+var currentjump = 0
+var maxjumptime =.5
+var isjumping = false
 
 func _ready():
 	startpos = position
@@ -13,32 +22,31 @@ func die():
 	$Camera2D.reset_smoothing()
 
 func _physics_process(delta):
+	
+	velocity.y += gravity
+	
 	$AnimatedSprite.animation = "walk"
+	
 	if Input.is_action_pressed("move_right"):
-		velocity.x = 150 
+		velocity.x += acceleration
 		$AnimatedSprite.flip_h = true
 	elif Input.is_action_pressed("move_left"):
-		velocity.x = -150
+		velocity.x -= acceleration
 		$AnimatedSprite.flip_h = false
+	velocity.x *= friction
+	
+	
+	if (is_on_floor() or isjumping && currentjump < maxjumptime )&& Input.is_action_pressed("jump"):
+		velocity.y = -jumpspeed
+		isjumping = true
+		currentjump += delta
 	else:
-		velocity.x = 0
-	
-	if !is_on_floor():
-		velocity.y += 10
-	else: velocity.y = 10
-	
-	if Input.is_action_just_pressed("jump") && is_on_floor():
-		velocity.y = -300
-		
-	
-	if is_on_ceiling():
-		velocity.y = 10
+		isjumping = false
+		currentjump = 0
 
-	move_and_slide(velocity, Vector2(0, -1), false)
-	
 
-func _process(delta):
-	pass
-	pass
+	velocity = move_and_slide(velocity, Vector2(0, -1), true, 4)
+
+
 
 
