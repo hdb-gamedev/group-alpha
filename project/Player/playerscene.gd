@@ -45,7 +45,7 @@ func _physics_process(delta):
 		currentjump = 0
 
 
-	velocity = move_and_slide(velocity, Vector2(0, -1), true, 4)
+	velocity = move_and_slide(velocity, Vector2(0, -1), true, 6)
 
 
 
