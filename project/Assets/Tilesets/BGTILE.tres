@@ -76,7 +76,7 @@
 24/name = "center"
 24/texture = ExtResource( 1 )
 24/tex_offset = Vector2( 0, 0 )
-24/modulate = Color( 0.63, 0.63, 0.63, 1 )
+24/modulate = Color( 1, 1, 1, 1 )
 24/region = Rect2( 32, 32, 32, 32 )
 24/tile_mode = 0
 24/occluder_offset = Vector2( 0, 0 )
@@ -283,3 +283,17 @@
 45/shape_one_way_margin = 0.0
 45/shapes = [  ]
 45/z_index = 2
+46/name = "dark_center"
+46/texture = ExtResource( 1 )
+46/tex_offset = Vector2( 0, 0 )
+46/modulate = Color( 0.745098, 0.745098, 0.745098, 1 )
+46/region = Rect2( 32, 32, 32, 32 )
+46/tile_mode = 0
+46/occluder_offset = Vector2( 0, 0 )
+46/navigation_offset = Vector2( 0, 0 )
+46/shape_offset = Vector2( 0, 0 )
+46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+46/shape_one_way = false
+46/shape_one_way_margin = 0.0
+46/shapes = [  ]
+46/z_index = 0
