@@ -1,9 +1,16 @@
 extends KinematicBody2D
+class_name Player
 var velocity = Vector2(0, 0)
-
+var startpos
 
 func _ready():
-	pass 
+	startpos = position
+	
+
+func die():
+	velocity.y = 0
+	position = startpos
+	$Camera2D.reset_smoothing()
 
 func _physics_process(delta):
 	$AnimatedSprite.animation = "walk"
@@ -33,3 +40,5 @@ func _physics_process(delta):
 func _process(delta):
 	pass
 	pass
+
+
