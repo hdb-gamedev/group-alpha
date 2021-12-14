@@ -9,7 +9,8 @@ var friction = .85
 var maxspeed = 300
 var acceleration = maxspeed * (1 - friction)
 var currentjump = 0
-var maxjumptime =.5
+var maxjumptime =.2
+
 var isjumping = false
 
 func _ready():
