@@ -25,18 +25,8 @@ script = ExtResource( 1 )
 position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "walk"
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource( 3 )
-
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 1, -1 )
-offset = Vector2( -10, 0 )
-current = true
-zoom = Vector2( 0.4, 0.4 )
-limit_top = -4096
-limit_bottom = 32
-limit_smoothed = true
-smoothing_enabled = true
-editor_draw_limits = true

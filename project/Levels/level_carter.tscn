@@ -76,6 +76,15 @@ extents = Vector2( 2823.38, 161.75 )
 [node name="Node2D2" type="Node2D"]
 script = ExtResource( 30 )
 
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 1, -1 )
+offset = Vector2( -10, 0 )
+current = true
+zoom = Vector2( 0.4, 0.4 )
+limit_smoothed = true
+smoothing_enabled = true
+editor_draw_limits = true
+
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
 position = Vector2( -226, -32 )
 

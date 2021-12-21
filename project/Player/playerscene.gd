@@ -20,7 +20,7 @@ func _ready():
 func die():
 	velocity.y = 0
 	position = startpos
-	$Camera2D.reset_smoothing()
+	
 
 func _physics_process(delta):
 	
