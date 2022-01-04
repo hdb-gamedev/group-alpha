@@ -7,7 +7,12 @@
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 2 ) ],
 "loop": true,
 "name": "walk",
 "speed": 4.0
@@ -25,7 +30,7 @@ script = ExtResource( 1 )
 position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 2
+speed_scale = 0.5
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
