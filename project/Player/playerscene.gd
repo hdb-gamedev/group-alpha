@@ -5,8 +5,8 @@ var velocity = Vector2(0, 0)
 var startpos
 var gravity = 10
 var jumpspeed = 200
-var friction = .85
-var maxspeed = 300
+var friction = .89
+var maxspeed = 250
 var acceleration = maxspeed * (1 - friction)
 var currentjump = 0
 var maxjumptime =.2
@@ -43,6 +43,7 @@ func _physics_process(delta):
 		velocity.y = -jumpspeed
 		isjumping = true
 		currentjump += delta
+		$AnimatedSprite.animation = "jump"
 	else:
 		isjumping = false
 		currentjump = 0
