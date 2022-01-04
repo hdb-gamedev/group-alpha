@@ -4,7 +4,7 @@ class_name Player
 var velocity = Vector2(0, 0)
 var startpos
 var gravity = 10
-var jumpspeed = 270
+var jumpspeed = 200
 var friction = .85
 var maxspeed = 300
 var acceleration = maxspeed * (1 - friction)
@@ -20,6 +20,8 @@ func _ready():
 func die():
 	velocity.y = 0
 	position = startpos
+	get_parent().get_node("Camera2D").set_position(startpos)
+	get_parent().get_node("Camera2D").reset_smoothing()
 	
 
 func _physics_process(delta):
