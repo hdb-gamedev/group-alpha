@@ -115,13 +115,13 @@ region = Rect2( 64, 128, 32, 32 )
 atlas = ExtResource( 2 )
 region = Rect2( 96, 128, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=32]
-atlas = ExtResource( 2 )
-region = Rect2( 32, 32, 32, 32 )
-
 [sub_resource type="AtlasTexture" id=33]
 atlas = ExtResource( 2 )
 region = Rect2( 64, 32, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 2 )
+region = Rect2( 32, 32, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -140,12 +140,12 @@ animations = [ {
 "name": "die",
 "speed": 4.91
 }, {
-"frames": [ SubResource( 32 ), SubResource( 33 ) ],
+"frames": [ SubResource( 33 ), SubResource( 32 ) ],
 "loop": true,
 "name": "walk",
 "speed": 4.0
 }, {
-"frames": [ SubResource( 4 ), SubResource( 15 ) ],
+"frames": [ SubResource( 32 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
@@ -163,7 +163,6 @@ script = ExtResource( 1 )
 position = Vector2( 0, 1 )
 frames = SubResource( 2 )
 animation = "walk"
-frame = 1
 speed_scale = 0.5
 playing = true
 
