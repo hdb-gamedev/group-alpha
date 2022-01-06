@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Assets/Tilesets/FINALTILE.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/playerscene.tscn" type="PackedScene" id=2]
@@ -22,6 +22,13 @@
 [ext_resource path="res://Assets/3 Objects/Stones/1.png" type="Texture" id=20]
 [ext_resource path="res://Assets/3 Objects/Grass/7.png" type="Texture" id=21]
 [ext_resource path="res://Assets/3 Objects/Grass/1.png" type="Texture" id=22]
+[ext_resource path="res://Assets/Fonts/Righteous-Regular.ttf" type="DynamicFontData" id=23]
+[ext_resource path="res://Assets/3 Objects/Willows/1.png" type="Texture" id=24]
+
+[sub_resource type="DynamicFont" id=1]
+size = 23
+use_filter = true
+font_data = ExtResource( 23 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -171,6 +178,42 @@ texture = ExtResource( 19 )
 position = Vector2( 1808, 214 )
 texture = ExtResource( 8 )
 
+[node name="28" type="Sprite" parent="Props"]
+position = Vector2( 1477, 216 )
+texture = ExtResource( 22 )
+
+[node name="29" type="Sprite" parent="Props"]
+position = Vector2( 1589, 217 )
+texture = ExtResource( 13 )
+
+[node name="30" type="Sprite" parent="Props"]
+position = Vector2( 1528, 219 )
+texture = ExtResource( 14 )
+
+[node name="32" type="Sprite" parent="Props"]
+position = Vector2( 1505, 220 )
+texture = ExtResource( 18 )
+
+[node name="34" type="Sprite" parent="Props"]
+position = Vector2( 1675, 217 )
+texture = ExtResource( 17 )
+
+[node name="35" type="Sprite" parent="Props"]
+position = Vector2( 1739, 219 )
+texture = ExtResource( 14 )
+
+[node name="36" type="Sprite" parent="Props"]
+position = Vector2( 1709, 218 )
+texture = ExtResource( 21 )
+
+[node name="38" type="Sprite" parent="Props"]
+position = Vector2( 1773, 217 )
+texture = ExtResource( 11 )
+
+[node name="39" type="Sprite" parent="Props"]
+position = Vector2( 1984, 214 )
+texture = ExtResource( 5 )
+
 [node name="Collectables" type="Node2D" parent="."]
 
 [node name="Coin" parent="Collectables" instance=ExtResource( 3 )]
@@ -184,3 +227,25 @@ position = Vector2( 626, -19 )
 
 [node name="Coin4" parent="Collectables" instance=ExtResource( 3 )]
 position = Vector2( 749, -85 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = -19.0
+margin_top = -121.0
+margin_right = 299.0
+margin_bottom = 43.0
+custom_fonts/font = SubResource( 1 )
+text = "Welcome to THE SWAMP!!!
+Hop along till you find a puddle then jump in."
+align = 1
+autowrap = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="2" type="Sprite" parent="."]
+position = Vector2( 1557, 220 )
+texture = ExtResource( 9 )
+
+[node name="1" type="Sprite" parent="."]
+position = Vector2( 1641, 157 )
+texture = ExtResource( 24 )
