@@ -1,4 +1,4 @@
-[gd_scene load_steps=54 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Assets/Tilesets/FINALTILE.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/playerscene.tscn" type="PackedScene" id=2]
@@ -41,6 +41,10 @@
 [ext_resource path="res://Levels/respawn.gd" type="Script" id=39]
 [ext_resource path="res://Assets/3 Objects/Pointers/1.png" type="Texture" id=40]
 [ext_resource path="res://Assets/Fonts/Righteous-Regular.ttf" type="DynamicFontData" id=41]
+[ext_resource path="res://Assets/background/4.png" type="Texture" id=42]
+[ext_resource path="res://Assets/background/1.png" type="Texture" id=43]
+[ext_resource path="res://Assets/background/3.png" type="Texture" id=44]
+[ext_resource path="res://Assets/background/2.png" type="Texture" id=45]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 128, 9.5 )
@@ -86,6 +90,7 @@ position = Vector2( 1, -1 )
 offset = Vector2( -10, 0 )
 current = true
 zoom = Vector2( 0.4, 0.4 )
+limit_top = -590
 limit_smoothed = true
 smoothing_enabled = true
 editor_draw_limits = true
@@ -605,6 +610,7 @@ shape = SubResource( 9 )
 one_way_collision = true
 
 [node name="Backgrounds" type="Sprite" parent="."]
+visible = false
 position = Vector2( -118, -228 )
 scale = Vector2( 2.28861, 1.48933 )
 z_index = -1
@@ -675,6 +681,40 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+offset = Vector2( 576, 0 )
+transform = Transform2D( 1, 0, 0, 1, 576, 0 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.1, 0.1 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer"]
+position = Vector2( -1, 1 )
+texture = ExtResource( 43 )
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.2, 0.1 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer2"]
+texture = ExtResource( 45 )
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.19, 0.1 )
+motion_offset = Vector2( 0, -20 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer4"]
+texture = ExtResource( 42 )
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2( 0.4, 0.1 )
+motion_mirroring = Vector2( 576, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
+texture = ExtResource( 44 )
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D_body_entered"]
