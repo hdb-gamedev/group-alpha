@@ -31,11 +31,13 @@ func _physics_process(delta):
 	
 	
 	if Input.is_action_pressed("move_right"):
+		$AnimatedSprite.animation = "walk"
 		velocity.x += acceleration
-		$AnimatedSprite.flip_h = true
-	elif Input.is_action_pressed("move_left"):
-		velocity.x -= acceleration
 		$AnimatedSprite.flip_h = false
+	elif Input.is_action_pressed("move_left"):
+		$AnimatedSprite.animation = "walk"
+		velocity.x -= acceleration
+		$AnimatedSprite.flip_h = true
 	velocity.x *= friction
 	
 
@@ -49,7 +51,7 @@ func _physics_process(delta):
 	else:
 		isjumping = false
 		currentjump = 0
-		$AnimatedSprite.animation = "idle"
+		
 		
 
 

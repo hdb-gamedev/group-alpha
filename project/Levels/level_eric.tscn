@@ -453,18 +453,18 @@ extents = Vector2( 6, 6 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 36 )
 
-[node name="KinematicBody2D" parent="." instance=ExtResource( 47 )]
-position = Vector2( -231, -326 )
-z_index = 3
-z_as_relative = false
-
-[node name="Camera2D" type="Camera2D" parent="KinematicBody2D"]
-position = Vector2( 273, 141 )
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 42, -185 )
 current = true
 zoom = Vector2( 0.4, 0.4 )
 limit_left = -300
 limit_top = -1024
 limit_bottom = 32
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 47 )]
+position = Vector2( -231, -326 )
+z_index = 3
+z_as_relative = false
 
 [node name="ground" type="TileMap" parent="."]
 scale = Vector2( 0.607564, 0.628274 )

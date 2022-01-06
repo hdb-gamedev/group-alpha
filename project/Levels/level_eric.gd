@@ -8,5 +8,6 @@ func _ready():
 func _on_Area2D_body_entered(body):
 	get_tree().change_scene("res://Levels/topdown.tscn")
 
+
 func _process(delta):
 	camera.set_position(player.get_position())
