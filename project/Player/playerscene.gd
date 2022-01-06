@@ -28,15 +28,19 @@ func _physics_process(delta):
 	
 	velocity.y += gravity
 	
-	$AnimatedSprite.animation = "walk"
+	
 	
 	if Input.is_action_pressed("move_right"):
+		$AnimatedSprite.animation = "walk"
 		velocity.x += acceleration
-		$AnimatedSprite.flip_h = true
-	elif Input.is_action_pressed("move_left"):
-		velocity.x -= acceleration
 		$AnimatedSprite.flip_h = false
+	elif Input.is_action_pressed("move_left"):
+		$AnimatedSprite.animation = "walk"
+		velocity.x -= acceleration
+		$AnimatedSprite.flip_h = true
 	velocity.x *= friction
+	
+
 	
 	
 	if (is_on_floor() or isjumping && currentjump < maxjumptime )&& Input.is_action_pressed("jump"):
@@ -47,6 +51,8 @@ func _physics_process(delta):
 	else:
 		isjumping = false
 		currentjump = 0
+		
+		
 
 
 	velocity = move_and_slide(velocity, Vector2(0, -1), true, 6)
