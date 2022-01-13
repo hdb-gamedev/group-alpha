@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://Assets/Tilesets/FINALTILE.tres" type="TileSet" id=1]
 [ext_resource path="res://Player/playerscene.tscn" type="PackedScene" id=2]
@@ -32,7 +32,6 @@
 [ext_resource path="res://Levels/level_carter.gd" type="Script" id=30]
 [ext_resource path="res://Collectables/coin.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Assets/3 Objects/Willows/3.png" type="Texture" id=32]
-[ext_resource path="res://Assets/3 Objects/Bushes/Background_01.png" type="Texture" id=33]
 [ext_resource path="res://Collectables/teleportationstone.tscn" type="PackedScene" id=34]
 [ext_resource path="res://UI/ui.tscn" type="PackedScene" id=35]
 [ext_resource path="res://Assets/Tilesets/water_set.tres" type="TileSet" id=36]
@@ -90,7 +89,7 @@ position = Vector2( 1, -1 )
 offset = Vector2( -10, 0 )
 current = true
 zoom = Vector2( 0.4, 0.4 )
-limit_top = -590
+limit_top = -587
 limit_smoothed = true
 smoothing_enabled = true
 editor_draw_limits = true
@@ -561,6 +560,33 @@ position = Vector2( 1392, 492 )
 [node name="Coin43" parent="Collectables" instance=ExtResource( 31 )]
 position = Vector2( 1296, 333 )
 
+[node name="Coin44" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1703, -18 )
+
+[node name="Coin45" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1731, -18 )
+
+[node name="Coin46" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1760, -18 )
+
+[node name="Coin47" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1676, -17 )
+
+[node name="Coin48" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1648, -17 )
+
+[node name="Coin49" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1703, -51 )
+
+[node name="Coin50" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1703, -84 )
+
+[node name="Coin51" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1730, -50 )
+
+[node name="Coin52" parent="Collectables" instance=ExtResource( 31 )]
+position = Vector2( -1676, -50 )
+
 [node name="OneWayTIles" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OneWayTIles"]
@@ -608,32 +634,6 @@ one_way_collision = true
 position = Vector2( -336.125, -376 )
 shape = SubResource( 9 )
 one_way_collision = true
-
-[node name="Backgrounds" type="Sprite" parent="."]
-visible = false
-position = Vector2( -118, -228 )
-scale = Vector2( 2.28861, 1.48933 )
-z_index = -1
-texture = ExtResource( 33 )
-
-[node name="Background01" type="Sprite" parent="Backgrounds"]
-position = Vector2( -1334, -1.52588e-05 )
-texture = ExtResource( 33 )
-
-[node name="Background02" type="Sprite" parent="Backgrounds"]
-position = Vector2( 1334, 6.19888e-06 )
-z_index = -1
-texture = ExtResource( 33 )
-
-[node name="ColorRect" type="ColorRect" parent="Backgrounds"]
-margin_left = -2001.0
-margin_top = 369.0
-margin_right = 2001.0
-margin_bottom = 1272.0
-color = Color( 0.0784314, 0.0980392, 0.0588235, 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -715,6 +715,8 @@ motion_mirroring = Vector2( 576, 0 )
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource( 44 )
+
+[node name="SpawnManager" type="Node" parent="."]
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D_body_entered"]
