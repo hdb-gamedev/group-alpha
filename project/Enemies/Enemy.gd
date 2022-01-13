@@ -1,8 +1,17 @@
 extends KinematicBody2D
-var speed = 5
+var velocity = Vector2(0, 0)
 
 func _ready():
-	pass
+	velocity.x = rand_range(-20, 20)
+	if(velocity.x >= 0):
+		velocity.x += 50
+	else:
+		velocity.x -= 50
 	
-func _physics_process(delta): 
-	move_and_slide(Vector2(speed, -10))
+func _physics_process(delta):
+	if(!is_on_floor()):
+		velocity.y += 15
+	elif is_on_floor():
+		velocity.y = 0.1
+		
+	move_and_slide(velocity, Vector2(0, -1))
