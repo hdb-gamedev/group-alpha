@@ -65,6 +65,7 @@ func _physics_process(delta):
 
 	velocity = move_and_slide(velocity, Vector2(0, -1), true, 6)
 
-
+func jumppad():
+	velocity.y = -600
 
 
