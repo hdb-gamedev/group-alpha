@@ -101,7 +101,7 @@ smoothing_enabled = true
 editor_draw_limits = true
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
-position = Vector2( -226, -32 )
+position = Vector2( 223, -86 )
 collision_mask = 3
 
 [node name="EnviornemntSolid" type="TileMap" parent="."]
@@ -727,7 +727,7 @@ motion_mirroring = Vector2( 576, 0 )
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer3"]
 texture = ExtResource( 44 )
 
-[node name="Node" parent="." instance=ExtResource( 46 )]
+[node name="Spawn Manager" parent="." instance=ExtResource( 46 )]
 
 [node name="Jumppad" parent="." instance=ExtResource( 33 )]
 position = Vector2( 978, 374 )
