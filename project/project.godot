@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="godot-template"
+config/name="Sidescroller Game"
 run/main_scene="res://Levels/level_carter.tscn"
 
 [autoload]
