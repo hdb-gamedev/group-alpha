@@ -738,6 +738,23 @@ position = Vector2( 786, 215 )
 [node name="Node2D" parent="." instance=ExtResource( 47 )]
 position = Vector2( -330, -24 )
 
+[node name="Label2" type="Label" parent="."]
+margin_left = 2817.0
+margin_top = -204.0
+margin_right = 2941.0
+margin_bottom = -85.0
+text = "WARNING!!!
+ENTER AT YOUR 
+OWN RISK!
+|
+|
+|
+V"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D2" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="respawn" to="respawn" method="_on_respawn_body_entered"]
