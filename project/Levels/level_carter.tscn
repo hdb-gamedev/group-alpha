@@ -653,7 +653,6 @@ position = Vector2( 2878, -50 )
 collision_layer = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 4, 0 )
 shape = SubResource( 10 )
 
 [node name="Tile0158" type="Sprite" parent="Area2D/CollisionShape2D"]
