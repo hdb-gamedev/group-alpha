@@ -170,7 +170,7 @@ vframes = 5
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 2 )
 animation = "walk"
-frame = 1
+frame = 2
 speed_scale = 0.5
 playing = true
 
